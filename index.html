@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIX MP — Приватный сервер Minecraft</title>
+    <style>
+        :root {
+            --bg-color: #121212;
+            --card-bg: #1e1e1e;
+            --accent-color: #df691a; /* Оранжевый в стиле Create/Steam */
+            --text-color: #e0e0e0;
+            --text-muted: #a0a0a0;
+            --discord-color: #5865F2;
+            --telegram-color: #24A1DE;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1627856013091-fed6e4e30025?q=80&w=1200') no-repeat center center/cover;
+            height: 40vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            border-bottom: 3px solid var(--accent-color);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: var(--accent-color);
+            font-weight: bold;
+            margin: 10px 0 0 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background-color: var(--card-bg);
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+
+        h2 {
+            color: #fff;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .feature-card {
+            background-color: rgba(255,255,255,0.05);
+            padding: 20px;
+            border-radius: 6px;
+            border-left: 4px solid var(--accent-color);
+        }
+
+        .feature-card h3 {
+            margin-top: 0;
+            color: #fff;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        li:last-child {
+            border-bottom: none;
+        }
+
+        .badge {
+            background-color: var(--accent-color);
+            color: white;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            margin-left: 10px;
+            vertical-align: middle;
+        }
+
+        .buttons-container {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            color: white;
+            text-decoration: none;
+            padding: 12px 28px;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: transform 0.2s, background-color 0.3s;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .btn-discord {
+            background-color: var(--discord-color);
+        }
+
+        .btn-discord:hover {
+            background-color: #434ee0;
+        }
+
+        .btn-telegram {
+            background-color: var(--telegram-color);
+        }
+
+        .btn-telegram:hover {
+            background-color: #1d85b8;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>NIX MP</h1>
+        <p>Приватный индустриально-сюжетный сервер Minecraft</p>
+    </header>
+
+    <div class="container">
+
+        <!-- О сервере -->
+        <section id="about">
+            <h2>О проекте</h2>
+            <p><strong>NIX MP</strong> — это уникальный приватный сервер, где индустриальный прогресс переплетается с захватывающей сюжетной линией. Стройте огромные заводы, прокладывайте железные дороги, создавайте летающие корабли и разгадывайте тайны этого мира вместе с дружелюбным комьюнити.</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Работа 24/7</h3>
+                    <p>Сервер доступен круглосуточно. Стабильная работа с одной автоматической перезагрузкой в сутки для очистки лагов.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Абсолютно бесплатно</h3>
+                    <p>У нас нет платных проходок, донат-админок или креатива. Все игроки находятся в равных условиях.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Сюжетная линия</h3>
+                    <p>Мир NIX MP живет своей жизнью. Участвуйте в ивентах, влияйте на историю и развивайте лор сервера.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Моды -->
+        <section id="mods">
+            <h2>Основные моды сборки</h2>
+            <p>Всего в нашей сборке <strong>около 50 оптимизированных модов</strong>. Вот главные из них, задающие тон всей игре:</p>
+            <ul>
+                <li><strong>Create</strong> <span class="badge">Автоматизация</span> — механизмы, шестеренки, конвейеры и безумные заводы.</li>
+                <li><strong>Create Steam n' Rails</strong> <span class="badge">Транспорт</span> — продвинутые поезда и новые виды рельс.</li>
+                <li><strong>Create Interiors</strong> <span class="badge">Декор</span> — всё для обустройства ваших кастомных интерьеров.</li>
+                <li><strong>Create Copycats</strong> <span class="badge">Строительство</span> — блоки-мимики для идеальных построек.</li>
+                <li><strong>Valkyrien Skies</strong> <span class="badge">Физика</span> — стройте полноценные летающие корабли и дирижабли!</li>
+                <li><strong>Farmers' Delight</strong> <span class="badge">Кулинария</span> — расширенное фермерство, новые блюда и механика готовки.</li>
+            </ul>
+            <p style="color: var(--text-muted); margin-top: 15px;">* А также еще более 40 модов на оптимизацию, генерацию мира и удобство (UI).</p>
+        </section>
+
+        <!-- Как попасть -->
+        <section id="join" style="text-align: center;">
+            <h2>Как начать играть?</h2>
+            <p>Так как сервер приватный, мы принимаем игроков только после вступления в наши сообщества. Присоединяйтесь, чтобы подать заявку, общаться с игроками и следить за новостями сюжета!</p>
+            
+            <div class="buttons-container">
+                <a href="https://discord.gg/4RfWGFedZ" class="btn btn-discord" target="_blank">Войти в Discord</a>
+                <a href="https://t.me/nixmpserver" class="btn btn-telegram" target="_blank">Наш Telegram</a>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 NIX MP. Все права защищены. Project is not affiliated with Mojang Studios.</p>
+    </footer>
+
+</body>
+  </html>
+  
